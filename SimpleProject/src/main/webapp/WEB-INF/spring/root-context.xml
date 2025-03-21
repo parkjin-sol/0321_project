@@ -17,7 +17,7 @@
 		  destroy-method="close">
 		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
 		<property name="url" value="jdbc:oracle:thin:@192.168.130.17:1521:xe" />
-		<property name="username" value="KH00_TEACHER" /> <!-- 요기바꾸기 -->
+		<property name="username" value="KH11_PJS" /> <!-- 요기바꾸기 -->
 		<property name="password" value="KH1234" />
 	</bean>
 	<!-- 
@@ -40,7 +40,7 @@
 		SqlSesison sqlSession = new SqlSessionTemplate(sqlSessionFactory);
 	-->
 	
-	<mybatis-spring:scan base-package="com.kh.spring.member.model.dao"/>
+	<mybatis-spring:scan base-package="com.kh.spring.member.model.dao, com.kh.spring.board.model.mapper" />
 	
 	
 	<!-- 파일업로드 관련 빈 등록 -->
